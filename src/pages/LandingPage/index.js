@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import Button  from 'atoms/button';
+import Header from "partials/Header";
 export default class index extends Component {
     render(){
         return (
-            <div>
-                
-            </div>
-        )
+            <>
+                <Header {...this.props}></Header>
+            </>
+        );
     }
 }
