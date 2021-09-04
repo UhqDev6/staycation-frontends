@@ -39,7 +39,7 @@ export default function Button(props) {
             );
         }else{
             return(
-                <Link to={props.href} className={className.join(" ")} style={props.style} onClick={onclick}>
+                <Link to={props.href} className={className.join(" ")} style={props.style} onclick={onclick}>
                     {props.children}
                 </Link>
             );
@@ -60,6 +60,7 @@ Button.propTypes = {
     target: propTypes.string,
     className: propTypes.string,
     isDisable: propTypes.bool,
+    isPrimary: propTypes.bool,
     isExternal: propTypes.bool,
     isLoading: propTypes.bool,
     isLarge: propTypes.bool,
