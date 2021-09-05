@@ -13,7 +13,7 @@ export default function index(props) {
         window.scrollTo({
             top: props.refMostPicked.current.offsetTop - 30,
             behavior: "smooth"
-        })
+        });
     }
     return (
         <section className="container pt-4">
@@ -27,7 +27,7 @@ export default function index(props) {
                      We provide what you need to enjoy your holiday with family. Time to
                      make another memorable moments.
                   </p>
-                  <Button className="btn px-5 btn-shadow" isPrimary onclick={showMostPicked}>
+                  <Button className="btn px-5" hasShadow isPrimary onClick={showMostPicked}>
                     Show Me Now
                   </Button>
                   <div className="row" style={{ marginTop: 80 }}>

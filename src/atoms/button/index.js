@@ -9,8 +9,8 @@ export default function Button(props) {
     if(props.isBlock) className.push("btn-block")
     if(props.hasShadow) className.push("btn-shadow")
 
-    const onclick = () => {
-        if(props.onclick) props.onclick()
+    const onClick = () => {
+        if(props.onClick) props.onClick()
     };
 
     if(props.isDisable || props.isLoading){
@@ -39,7 +39,7 @@ export default function Button(props) {
             );
         }else{
             return(
-                <Link to={props.href} className={className.join(" ")} style={props.style} onclick={onclick}>
+                <Link to={props.href} className={className.join(" ")} style={props.style} onClick={onClick}>
                     {props.children}
                 </Link>
             );
@@ -47,7 +47,7 @@ export default function Button(props) {
     }
 
     return (
-        <button className={className.join(" ")} style={props.style}>
+        <button className={className.join(" ")} style={props.style} onClick={onClick}>
             {props.children}
         </button>
     );
@@ -55,7 +55,7 @@ export default function Button(props) {
 
 Button.propTypes = {
     type: propTypes.oneOf(["button", "link"]),
-    onclick: propTypes.func,
+    onClick: propTypes.func,
     href: propTypes.string,
     target: propTypes.string,
     className: propTypes.string,
