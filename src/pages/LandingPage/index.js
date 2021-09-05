@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Header from "partials/Header";
 import Hero from 'partials/Hero';
-import MostPicket from 'partials/Mostpicket'
+import MostPicket from 'partials/Mostpicket';
+import Categories from 'partials/Categories';
 
 import landingPage from "json/landingPage.json";
 
@@ -16,6 +17,7 @@ export default class index extends Component {
                 <Header {...this.props}></Header>
                 <Hero refMostPicked={this.refMostPicked} data={landingPage.hero}/>
                 <MostPicket refMostPicked={this.refMostPicked} data={landingPage.mostPicked}></MostPicket>
+                <Categories data={landingPage.categories}></Categories>
             </>
         );
     }
