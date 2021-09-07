@@ -4,7 +4,7 @@ import React from 'react'
 export default function index(props) {
     return (
         <section className="container" ref={props.refMostPicked}>
-            <h4 className="mb-3">Most Picket</h4>
+            <h4 className="mb-3">Most Picked</h4>
             <div className="container-grid">
                 {props.data.map((item, index) => {
                     return (
