@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Fade from 'react-reveal/Fade';
 import imageHero from 'assets/images/img-hero/img-hero.svg'
 import imageHeroFrame from 'assets/images/img-hero/img-hero-frame.svg'
 import iconCities from 'assets/images/icons/ic_cities.svg'
@@ -16,6 +16,7 @@ export default function index(props) {
         });
     }
     return (
+        <Fade top>
         <section className="container pt-4">
             <div className="row align-items-center">
                <div className="col-auto pr-5" style={{ width: 530 }}>
@@ -62,5 +63,6 @@ export default function index(props) {
                </div>
             </div>
         </section>
+        </Fade>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 import Button from 'atoms/button';
 import BrandIcon from 'partials/IconText';
 export default function index(props) {
@@ -6,6 +7,7 @@ export default function index(props) {
         return props.location.pathname === path ? " active" : ""
     };
     return (
+        <Fade>
         <header className="spacing-sm">
            <div className="container">
                <nav className="navbar navbar-expand-lg navbar-light">
@@ -37,5 +39,6 @@ export default function index(props) {
                 </nav>   
            </div> 
         </header>
+        </Fade>
     );
 }

@@ -1,9 +1,11 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 import Star from 'atoms/star';
 import TestimoniFrame from 'assets/images/img-testimonial/testimonial-frame.jpg';
 import Button from 'atoms/button';
 export default function index({data}) {
     return (
+        <Fade bottom>
         <section className="container">
             <div className="row align-items-center">
                 <div className="col-auto" style={{ marginRight: 70 }}>
@@ -32,5 +34,6 @@ export default function index({data}) {
             </div>
             {/* <Star value={3.5} width={35} height={35} spacing={4}></Star> */}
         </section>
+        </Fade>
     )
 }
