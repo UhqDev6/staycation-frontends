@@ -7,8 +7,9 @@ function App() {
   return <>
     <div className="App">
       <Router>
-          <Route path="/" component={LandingPage}></Route>
           <Route path="/DetailPage" component={DetailPage}></Route>
+          <Route path="/" component={LandingPage}></Route>
+         
       </Router>
     </div>
   </>

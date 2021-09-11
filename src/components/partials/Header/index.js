@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Button from 'atoms/button';
-import BrandIcon from 'partials/IconText';
+import Button from 'components/atoms/button';
+import BrandIcon from 'components/partials/IconText';
 export default function index(props) {
     const getNavLinkClass = path => {
         return props.location.pathname === path ? " active" : ""

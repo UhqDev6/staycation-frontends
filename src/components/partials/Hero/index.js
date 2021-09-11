@@ -6,8 +6,8 @@ import iconCities from 'assets/images/icons/ic_cities.svg'
 import iconTraveler from 'assets/images/icons/ic_traveler.svg'
 import iconTreasure from 'assets/images/icons/ic_treasure.svg'
 
-import Button from 'atoms/button';
-import FormatNumber from 'atoms/formatnumber';
+import Button from 'components/atoms/button';
+import FormatNumber from 'components/utils/formatnumber';
 export default function index(props) {
     function showMostPicked(){
         window.scrollTo({

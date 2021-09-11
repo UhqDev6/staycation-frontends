@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Button from 'atoms/button';
+import Button from 'components/atoms/button';
 export default function index(props) {
     return (
         <section className="container" ref={props.refMostPicked}>

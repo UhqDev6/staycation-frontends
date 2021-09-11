@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
-import InputNumber from 'atoms/inputnumber';
+import {InputDate} from 'components/atoms/form';
 export default class index extends Component {
     state =  {
-        value: "1"
+        value: {
+            startDate: new Date(),
+            endDate: new Date(),
+            key: "selection"
+        }
     };
 
     handleChange = e => {
@@ -14,14 +18,12 @@ export default class index extends Component {
             <div className="container">
                 <div className="row align-items-center justify-content-center" style={{ height: "100vh" }}>
                     <div className="col-auto">
-                        <InputNumber
-                            max={30}
-                            suffix=" Night"
-                            isSuffixPlural ="s"
-                            name="value"
-                            onChange={this.handleChange}
-                            value={this.state.value}
-                        />
+                    <InputDate
+                        max={30}
+                        onChange={this.handleChange}
+                        name="value"
+                        value={this.state.value}
+                    />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-@import "../../assets/scss/colorVariables";
+@import "../../../assets/scss/colorVariables";
 
 .stars {
     position: relative;
@@ -7,7 +7,7 @@
     .star {
         position: absolute;
         display: inline-flex;
-        mask: url(../../assets/images/icons/ic_star.svg) no-repeat center left;
+        mask: url(../../../assets/images/icons/ic_star.svg) no-repeat center left;
         &:not(.placeholder) {
             z-index: 2;
             background-color: $yellow;

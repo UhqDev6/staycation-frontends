@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from 'atoms/button'
-import IconText from 'partials/IconText'
+import Button from 'components/atoms/button'
+import IconText from 'components/partials/IconText'
 export default function index() {
     return (
         <footer>

@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import Header from "partials/Header";
-import Hero from 'partials/Hero';
-import MostPicket from 'partials/Mostpicket';
-import Categories from 'partials/Categories';
-import Testimonial from 'partials/Testimonial';
-import Footer from 'partials/Footer';
+import Header from "components/partials/Header";
+import Hero from 'components/partials/Hero';
+import MostPicket from 'components/partials/Mostpicket';
+import Categories from 'components/partials/Categories';
+import Testimonial from 'components/partials/Testimonial';
+import Footer from 'components/partials/Footer';
 
 import landingPage from "json/landingPage.json";
 

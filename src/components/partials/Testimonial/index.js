@@ -1,8 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Star from 'atoms/star';
+import Star from 'components/atoms/star';
 import TestimoniFrame from 'assets/images/img-testimonial/testimonial-frame.jpg';
-import Button from 'atoms/button';
+import Button from 'components/atoms/button';
 export default function index({data}) {
     return (
         <Fade bottom>
