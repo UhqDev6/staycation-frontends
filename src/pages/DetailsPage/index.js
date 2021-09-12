@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from "components/partials/Header";
 import PageDetailsTitle from "components/partials/PageDetailsTitle";
+import FeaturedImage from "components/partials/FeaturedImage";
 import ItemDetails from "json/itemDetails.json";
 export default class index extends Component {
     componentDidMount(){
@@ -21,6 +22,7 @@ export default class index extends Component {
                     data={ItemDetails}
                 >
                 </PageDetailsTitle>
+                <FeaturedImage data={ItemDetails.imageUrls}></FeaturedImage>
             </>
         );
     }
