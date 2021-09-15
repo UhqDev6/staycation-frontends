@@ -4,10 +4,10 @@ export default date => {
         year: "numeric",
         month: "short",
         day: "2-digit"
-    });
+    })
 
     const [
-        {value: mo}, , {value: da}
-    ] = dtf.formatToParts(d);
+        {value: mo}, {value: da}
+    ] = dtf.formatToParts(d)
     return `${da} ${mo}`
 }
