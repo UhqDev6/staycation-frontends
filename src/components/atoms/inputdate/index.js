@@ -11,12 +11,12 @@ export default function InputDate(props) {
     const {value, placeholder, name} = props;
     const [isShowed, setIsShowed] = useState(false);
 
-    const dataPickerChange = (value) => {
+    const datePickerChange = (value) => {
         const target = {
             target: {
                 value: value.selection,
-                name: name
-            }
+                name: name,
+            },
         };
         props.onChange(target);
     };
@@ -29,13 +29,13 @@ export default function InputDate(props) {
     });
 
     const refDate = useRef(null);
-    const handleClickOutside = event => {
+    const handleClickOutside = (event) => {
         if(refDate && !refDate.current.contains(event.target)){
             setIsShowed(false);
         }
     };
 
-    const check = focus => {
+    const check = (focus) => {
         focus.indexOf(1) < 0 && setIsShowed(false);
     };
 
@@ -56,19 +56,19 @@ export default function InputDate(props) {
                 className="form-control"
                 value={displayDate}
                 placeholder={placeholder}
-                onClick={() => setIsShowed({isShowed})}
+                onClick={() => setIsShowed(!isShowed)}
                 />
                 {isShowed && (
                     <div className="date-range-wrapper">
                         <DateRange
                         editTableDateInputs={true}
-                        onChange={dataPickerChange}
+                        onChange={datePickerChange}
                         moveRangeOnFirstSelection={false}
                         onRangeFocusChange={check}
                         ranges={[value]}
                         />
                     </div>
-                )};
+                )}
             </div>
         </div>
     )

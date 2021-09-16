@@ -54,16 +54,17 @@
     }
 }
 
+
 header {
     border-bottom: 1px solid $gray-200;
     width: 100%;
     position: relative;
     // margin-left: -0.8%;
     margin-bottom: 50px;
-
+    
     .navbar {
         height: 80px;
-
+        
         ul.navbar-nav {
             li.nav-item {
                 &.active {
@@ -88,7 +89,11 @@ header {
 }
 
 .card {
-    height: 100%;
+
+    &.bordered {
+        border: 1px solid $gray-200;
+    }
+    border-radius: 15px;
 
     .tag{
         z-index: 3;
@@ -126,7 +131,6 @@ header {
         overflow: hidden;
         cursor: pointer;
         height: 100%;
-        border-radius: 15px;
         &:after {
             position: absolute;
             content: "";
